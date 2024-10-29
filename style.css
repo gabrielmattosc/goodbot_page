@@ -1,18 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Space+Grotesk:wght@300..700&display=swap');
 
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-body{
-    font-size: 100%;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+body {
+  font-size: 100%;
+  background: linear-gradient(68deg, #ffffff 0%, rgba(121,194,189,1) 85%);
 }
 
-.cabecalho{
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: "Space Grotesk", sans-serif;
+    color: #2C3E50;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #000000;
+}
+
+.conteudo-principal {
     display: flex;
     flex-direction: row;
     align-items: center;
