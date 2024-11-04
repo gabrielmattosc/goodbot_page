@@ -1,20 +1,134 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Space+Grotesk:wght@300..700&display=swap');
 
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    text-decoration: none;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
-body{
-    font-size: 100%;
-    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+body {
+  font-size: 100%;
+  background: linear-gradient(68deg, #ffffff 0%, rgba(121,194,189,1) 85%);
 }
 
-.cabecalho{
+/* Estilos para tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Estilos para celulares */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: "Space Grotesk", sans-serif;
+    color: #2C3E50;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #000000;
+}
+
+.conteudo-principal {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-titulo {
+    font-family: "Righteous", cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #2C3E50;
+}
+
+.conteudo-principal-subtitulo {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    color: #2C3E50;
+    font-size: 24px;
+}
+
+.conteudo-principal-botao{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    background-color: transparent;
+    width: 180px;
+    height: 60px;
+    color: #2C3E50;
+    border-radius: 20px;
+    font-size: 20px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteudo-principal-botao:hover{
+    background-color: #000000;
+    color: #06dbc3;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid #000000;
+    padding-top: 48px;
+    font-family: "Righteous", cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2C3E50;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    color: #2C3E50;
+    font-size: 18px;
+}
+
+.rodape{
+    border-top: 0.4px solid #000000;
+    padding: 32px;
+}
+
+.rodape-imagem{
+    height: 80px;
+    width: 280px;
+    display: block;
+    margin: 0 auto;
 }
